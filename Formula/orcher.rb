@@ -1,25 +1,25 @@
 class Orcher < Formula
   desc "The ORCHER command-line interface: run an engine, start and inspect workflows, on your machine or in ORCHER Cloud"
   homepage "https://github.com/orcher-io"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/orcher-io/cli/releases/download/v0.1.0/orcher-aarch64-apple-darwin.tar.xz"
-      sha256 "f7227349912a3d9304a265709374d52040b48486330f7ecb90a06b6dcd63810f"
+      url "https://github.com/orcher-io/cli/releases/download/v0.1.1/orcher-aarch64-apple-darwin.tar.xz"
+      sha256 "b956da23166fd545ce6819736c5f6706861809aeb0b76635b36f864d24ca6c39"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orcher-io/cli/releases/download/v0.1.0/orcher-x86_64-apple-darwin.tar.xz"
-      sha256 "6e88a996b31ceac341f0f91a49fd3e01466899ea8cbadbe0d35fabdc01c73881"
+      url "https://github.com/orcher-io/cli/releases/download/v0.1.1/orcher-x86_64-apple-darwin.tar.xz"
+      sha256 "00d59fbc3e6c82f680672563daa92e029adfb59cb8380a8413a9ae63919f1e19"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/orcher-io/cli/releases/download/v0.1.0/orcher-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "42e1d7f5d038ad366faac2ffb708ab48ce0877a4be15a31969cca9938bf01116"
+      url "https://github.com/orcher-io/cli/releases/download/v0.1.1/orcher-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a0955facbdfc9698dbba12709c5630e5e7d6395638a556b58bf1078e1d777737"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orcher-io/cli/releases/download/v0.1.0/orcher-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fc71b696a0186b0cfcb69cdf336b0337526f4a4d70527ccd15cfae08ef253dac"
+      url "https://github.com/orcher-io/cli/releases/download/v0.1.1/orcher-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d164af4b9b6d808b90931731eb21c484c7b2036c47b33437e516b3110712ef95"
     end
   end
   license "Apache-2.0"
