@@ -1,8 +1,8 @@
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-    <img alt="ORCHER Homebrew tap" src="./assets/banner.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/orcher-io/homebrew-tap/main/assets/banner.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/orcher-io/homebrew-tap/main/assets/banner-light.svg">
+    <img alt="ORCHER Homebrew tap" src="https://raw.githubusercontent.com/orcher-io/homebrew-tap/main/assets/banner.svg" width="100%">
   </picture>
 </p>
 
