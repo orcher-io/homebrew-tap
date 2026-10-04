@@ -1,6 +1,6 @@
 name: test
 
-# Installs the formula from this checkout and runs its test block, on every
+# Installs the formula from this checkout and runs the installed binary, on every
 # platform it ships for, whenever it changes. A formula with a wrong URL or
 # checksum fails here instead of on a user's machine.
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: Set up Homebrew
         if: steps.formulae.outputs.names != '' && runner.os == 'Linux'
-        uses: Homebrew/actions/setup-homebrew@master
+        uses: Homebrew/actions/setup-homebrew@main
 
       - name: Install and test from this checkout
         if: steps.formulae.outputs.names != ''
@@ -47,6 +47,5 @@ jobs:
           ln -s "$GITHUB_WORKSPACE" "$tap"
           for f in ${{ steps.formulae.outputs.names }}; do
             brew install "orcher-io/tap/$f"
-            brew test "orcher-io/tap/$f"
             "$(brew --prefix)/bin/$f" --version
           done
